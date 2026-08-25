@@ -1,14 +1,5 @@
 https://www.youtube.com/@umarjamilai/videos
 https://vpn.xjtu.edu.cn/
-https://huggingface.co/mart9992/eri2/tree/main
-https://huggingface.co/docs/peft/main/en/task_guides/semantic_segmentation_lora#semantic-segmentation-using-lora
-https://www.kaggle.com/code/cheer001/notebook5f3073ce04/edit
-https://github.com/CSAILVision/semantic-segmentation-pytorch/tree/master
-
-
-Bug:
-1. eval_lora.sh and run_lora.sh performance diff
-
 
 
 ssh chenyinjia@10.184.17.27
