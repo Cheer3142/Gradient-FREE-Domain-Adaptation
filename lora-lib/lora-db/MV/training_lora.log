@@ -1,0 +1,1351 @@
+======================================================================
+🚀 LORA TRAINING (MV)
+======================================================================
+Start: 2025-11-22 07:38:35
+Device: cuda
+LoRA: r=16
+======================================================================
+
+ Creating base model...
+
+📂 Loading baseline decoder...
+✅ Baseline decoder loaded!
+✅ Linear-like modules found: 96
+encoder.layers.0.self_attn.k_proj
+encoder.layers.0.self_attn.v_proj
+encoder.layers.0.self_attn.q_proj
+encoder.layers.0.self_attn.out_proj
+encoder.layers.1.self_attn.k_proj
+encoder.layers.1.self_attn.v_proj
+encoder.layers.1.self_attn.q_proj
+encoder.layers.1.self_attn.out_proj
+encoder.layers.2.self_attn.k_proj
+encoder.layers.2.self_attn.v_proj
+encoder.layers.2.self_attn.q_proj
+encoder.layers.2.self_attn.out_proj
+encoder.layers.3.self_attn.k_proj
+encoder.layers.3.self_attn.v_proj
+encoder.layers.3.self_attn.q_proj
+encoder.layers.3.self_attn.out_proj
+encoder.layers.4.self_attn.k_proj
+encoder.layers.4.self_attn.v_proj
+encoder.layers.4.self_attn.q_proj
+encoder.layers.4.self_attn.out_proj
+encoder.layers.5.self_attn.k_proj
+encoder.layers.5.self_attn.v_proj
+encoder.layers.5.self_attn.q_proj
+encoder.layers.5.self_attn.out_proj
+encoder.layers.6.self_attn.k_proj
+encoder.layers.6.self_attn.v_proj
+encoder.layers.6.self_attn.q_proj
+encoder.layers.6.self_attn.out_proj
+encoder.layers.7.self_attn.k_proj
+encoder.layers.7.self_attn.v_proj
+encoder.layers.7.self_attn.q_proj
+encoder.layers.7.self_attn.out_proj
+encoder.layers.8.self_attn.k_proj
+encoder.layers.8.self_attn.v_proj
+encoder.layers.8.self_attn.q_proj
+encoder.layers.8.self_attn.out_proj
+encoder.layers.9.self_attn.k_proj
+encoder.layers.9.self_attn.v_proj
+encoder.layers.9.self_attn.q_proj
+encoder.layers.9.self_attn.out_proj
+encoder.layers.10.self_attn.k_proj
+encoder.layers.10.self_attn.v_proj
+encoder.layers.10.self_attn.q_proj
+encoder.layers.10.self_attn.out_proj
+encoder.layers.11.self_attn.k_proj
+encoder.layers.11.self_attn.v_proj
+encoder.layers.11.self_attn.q_proj
+encoder.layers.11.self_attn.out_proj
+encoder.layers.12.self_attn.k_proj
+encoder.layers.12.self_attn.v_proj
+encoder.layers.12.self_attn.q_proj
+encoder.layers.12.self_attn.out_proj
+encoder.layers.13.self_attn.k_proj
+encoder.layers.13.self_attn.v_proj
+encoder.layers.13.self_attn.q_proj
+encoder.layers.13.self_attn.out_proj
+encoder.layers.14.self_attn.k_proj
+encoder.layers.14.self_attn.v_proj
+encoder.layers.14.self_attn.q_proj
+encoder.layers.14.self_attn.out_proj
+encoder.layers.15.self_attn.k_proj
+encoder.layers.15.self_attn.v_proj
+encoder.layers.15.self_attn.q_proj
+encoder.layers.15.self_attn.out_proj
+encoder.layers.16.self_attn.k_proj
+encoder.layers.16.self_attn.v_proj
+encoder.layers.16.self_attn.q_proj
+encoder.layers.16.self_attn.out_proj
+encoder.layers.17.self_attn.k_proj
+encoder.layers.17.self_attn.v_proj
+encoder.layers.17.self_attn.q_proj
+encoder.layers.17.self_attn.out_proj
+encoder.layers.18.self_attn.k_proj
+encoder.layers.18.self_attn.v_proj
+encoder.layers.18.self_attn.q_proj
+encoder.layers.18.self_attn.out_proj
+encoder.layers.19.self_attn.k_proj
+encoder.layers.19.self_attn.v_proj
+encoder.layers.19.self_attn.q_proj
+encoder.layers.19.self_attn.out_proj
+encoder.layers.20.self_attn.k_proj
+encoder.layers.20.self_attn.v_proj
+encoder.layers.20.self_attn.q_proj
+encoder.layers.20.self_attn.out_proj
+encoder.layers.21.self_attn.k_proj
+encoder.layers.21.self_attn.v_proj
+encoder.layers.21.self_attn.q_proj
+encoder.layers.21.self_attn.out_proj
+encoder.layers.22.self_attn.k_proj
+encoder.layers.22.self_attn.v_proj
+encoder.layers.22.self_attn.q_proj
+encoder.layers.22.self_attn.out_proj
+encoder.layers.23.self_attn.k_proj
+encoder.layers.23.self_attn.v_proj
+encoder.layers.23.self_attn.q_proj
+encoder.layers.23.self_attn.out_proj
+⚠️ Non-linear modules skipped: 24
+('encoder.layers.0.self_attn', 'CLIPAttention')
+('encoder.layers.1.self_attn', 'CLIPAttention')
+('encoder.layers.2.self_attn', 'CLIPAttention')
+('encoder.layers.3.self_attn', 'CLIPAttention')
+('encoder.layers.4.self_attn', 'CLIPAttention')
+('encoder.layers.5.self_attn', 'CLIPAttention')
+('encoder.layers.6.self_attn', 'CLIPAttention')
+('encoder.layers.7.self_attn', 'CLIPAttention')
+('encoder.layers.8.self_attn', 'CLIPAttention')
+('encoder.layers.9.self_attn', 'CLIPAttention')
+('encoder.layers.10.self_attn', 'CLIPAttention')
+('encoder.layers.11.self_attn', 'CLIPAttention')
+('encoder.layers.12.self_attn', 'CLIPAttention')
+('encoder.layers.13.self_attn', 'CLIPAttention')
+('encoder.layers.14.self_attn', 'CLIPAttention')
+('encoder.layers.15.self_attn', 'CLIPAttention')
+('encoder.layers.16.self_attn', 'CLIPAttention')
+('encoder.layers.17.self_attn', 'CLIPAttention')
+('encoder.layers.18.self_attn', 'CLIPAttention')
+('encoder.layers.19.self_attn', 'CLIPAttention')
+('encoder.layers.20.self_attn', 'CLIPAttention')
+('encoder.layers.21.self_attn', 'CLIPAttention')
+('encoder.layers.22.self_attn', 'CLIPAttention')
+('encoder.layers.23.self_attn', 'CLIPAttention')
+
+🔧 Applying LoRA to CLIP...
+
+⚙️ Setting up optimizer...
+✅ Setup complete!
+   LoRA params: 3,145,728
+   Decoder params: 0
+
+======================================================================
+🎯 STARTING TRAINING
+======================================================================
+
+
+======================================================================
+Epoch 1/20
+======================================================================
+[Epoch 1][100/1125] Loss: 0.1971
+[Epoch 1][200/1125] Loss: 0.1921
+[Epoch 1][300/1125] Loss: 0.1889
+[Epoch 1][400/1125] Loss: 0.1865
+[Epoch 1][500/1125] Loss: 0.1850
+[Epoch 1][600/1125] Loss: 0.1826
+[Epoch 1][700/1125] Loss: 0.1816
+[Epoch 1][800/1125] Loss: 0.1803
+[Epoch 1][900/1125] Loss: 0.1796
+[Epoch 1][1000/1125] Loss: 0.1787
+[Epoch 1][1100/1125] Loss: 0.1771
+
+📊 Epoch 1 Summary:
+  Train Loss: 0.1768
+  Val Loss: 0.1709
+  Val mIoU: 0.5724
+💾 Best model saved! (mIoU: 0.5724)
+
+======================================================================
+Epoch 2/20
+======================================================================
+[Epoch 2][100/1125] Loss: 0.1611
+[Epoch 2][200/1125] Loss: 0.1622
+[Epoch 2][300/1125] Loss: 0.1597
+[Epoch 2][400/1125] Loss: 0.1588
+[Epoch 2][500/1125] Loss: 0.1591
+[Epoch 2][600/1125] Loss: 0.1582
+[Epoch 2][700/1125] Loss: 0.1576
+[Epoch 2][800/1125] Loss: 0.1576
+[Epoch 2][900/1125] Loss: 0.1575
+[Epoch 2][1000/1125] Loss: 0.1570
+[Epoch 2][1100/1125] Loss: 0.1571
+
+📊 Epoch 2 Summary:
+  Train Loss: 0.1569
+  Val Loss: 0.1570
+  Val mIoU: 0.5883
+💾 Best model saved! (mIoU: 0.5883)
+
+======================================================================
+Epoch 3/20
+======================================================================
+[Epoch 3][100/1125] Loss: 0.1410
+[Epoch 3][200/1125] Loss: 0.1449
+[Epoch 3][300/1125] Loss: 0.1449
+[Epoch 3][400/1125] Loss: 0.1437
+[Epoch 3][500/1125] Loss: 0.1442
+[Epoch 3][600/1125] Loss: 0.1439
+[Epoch 3][700/1125] Loss: 0.1445
+[Epoch 3][800/1125] Loss: 0.1437
+[Epoch 3][900/1125] Loss: 0.1438
+[Epoch 3][1000/1125] Loss: 0.1440
+[Epoch 3][1100/1125] Loss: 0.1443
+
+📊 Epoch 3 Summary:
+  Train Loss: 0.1445
+  Val Loss: 0.1495
+  Val mIoU: 0.5992
+💾 Best model saved! (mIoU: 0.5992)
+
+======================================================================
+Epoch 4/20
+======================================================================
+[Epoch 4][100/1125] Loss: 0.1363
+[Epoch 4][200/1125] Loss: 0.1337
+[Epoch 4][300/1125] Loss: 0.1334
+[Epoch 4][400/1125] Loss: 0.1329
+[Epoch 4][500/1125] Loss: 0.1328
+[Epoch 4][600/1125] Loss: 0.1340
+[Epoch 4][700/1125] Loss: 0.1343
+[Epoch 4][800/1125] Loss: 0.1340
+[Epoch 4][900/1125] Loss: 0.1335
+[Epoch 4][1000/1125] Loss: 0.1338
+[Epoch 4][1100/1125] Loss: 0.1336
+
+📊 Epoch 4 Summary:
+  Train Loss: 0.1336
+  Val Loss: 0.1470
+  Val mIoU: 0.6059
+💾 Best model saved! (mIoU: 0.6059)
+
+======================================================================
+Epoch 5/20
+======================================================================
+[Epoch 5][100/1125] Loss: 0.1222
+[Epoch 5][200/1125] Loss: 0.1238
+[Epoch 5][300/1125] Loss: 0.1238
+[Epoch 5][400/1125] Loss: 0.1225
+[Epoch 5][500/1125] Loss: 0.1230
+[Epoch 5][600/1125] Loss: 0.1230
+[Epoch 5][700/1125] Loss: 0.1233
+[Epoch 5][800/1125] Loss: 0.1239
+[Epoch 5][900/1125] Loss: 0.1235
+[Epoch 5][1000/1125] Loss: 0.1237
+[Epoch 5][1100/1125] Loss: 0.1240
+
+📊 Epoch 5 Summary:
+  Train Loss: 0.1238
+  Val Loss: 0.1433
+  Val mIoU: 0.6074
+💾 Best model saved! (mIoU: 0.6074)
+
+======================================================================
+Epoch 6/20
+======================================================================
+[Epoch 6][100/1125] Loss: 0.1155
+[Epoch 6][200/1125] Loss: 0.1152
+[Epoch 6][300/1125] Loss: 0.1153
+[Epoch 6][400/1125] Loss: 0.1159
+[Epoch 6][500/1125] Loss: 0.1160
+[Epoch 6][600/1125] Loss: 0.1155
+[Epoch 6][700/1125] Loss: 0.1152
+[Epoch 6][800/1125] Loss: 0.1152
+[Epoch 6][900/1125] Loss: 0.1152
+[Epoch 6][1000/1125] Loss: 0.1153
+[Epoch 6][1100/1125] Loss: 0.1152
+
+📊 Epoch 6 Summary:
+  Train Loss: 0.1153
+  Val Loss: 0.1406
+  Val mIoU: 0.6153
+💾 Best model saved! (mIoU: 0.6153)
+
+======================================================================
+Epoch 7/20
+======================================================================
+[Epoch 7][100/1125] Loss: 0.1090
+[Epoch 7][200/1125] Loss: 0.1089
+[Epoch 7][300/1125] Loss: 0.1089
+[Epoch 7][400/1125] Loss: 0.1080
+[Epoch 7][500/1125] Loss: 0.1078
+[Epoch 7][600/1125] Loss: 0.1079
+[Epoch 7][700/1125] Loss: 0.1079
+[Epoch 7][800/1125] Loss: 0.1075
+[Epoch 7][900/1125] Loss: 0.1075
+[Epoch 7][1000/1125] Loss: 0.1077
+[Epoch 7][1100/1125] Loss: 0.1081
+
+📊 Epoch 7 Summary:
+  Train Loss: 0.1080
+  Val Loss: 0.1423
+  Val mIoU: 0.6173
+💾 Best model saved! (mIoU: 0.6173)
+
+======================================================================
+Epoch 8/20
+======================================================================
+[Epoch 8][100/1125] Loss: 0.1041
+[Epoch 8][200/1125] Loss: 0.1025
+[Epoch 8][300/1125] Loss: 0.1028
+[Epoch 8][400/1125] Loss: 0.1024
+[Epoch 8][500/1125] Loss: 0.1026
+[Epoch 8][600/1125] Loss: 0.1026
+[Epoch 8][700/1125] Loss: 0.1026
+[Epoch 8][800/1125] Loss: 0.1025
+[Epoch 8][900/1125] Loss: 0.1026
+[Epoch 8][1000/1125] Loss: 0.1025
+[Epoch 8][1100/1125] Loss: 0.1023
+
+📊 Epoch 8 Summary:
+  Train Loss: 0.1024
+  Val Loss: 0.1445
+  Val mIoU: 0.6221
+💾 Best model saved! (mIoU: 0.6221)
+
+======================================================================
+Epoch 9/20
+======================================================================
+[Epoch 9][100/1125] Loss: 0.0975
+[Epoch 9][200/1125] Loss: 0.0965
+[Epoch 9][300/1125] Loss: 0.0965
+[Epoch 9][400/1125] Loss: 0.0968
+[Epoch 9][500/1125] Loss: 0.0970
+[Epoch 9][600/1125] Loss: 0.0968
+[Epoch 9][700/1125] Loss: 0.0974
+[Epoch 9][800/1125] Loss: 0.0981
+[Epoch 9][900/1125] Loss: 0.0982
+[Epoch 9][1000/1125] Loss: 0.0982
+[Epoch 9][1100/1125] Loss: 0.0980
+
+📊 Epoch 9 Summary:
+  Train Loss: 0.0980
+  Val Loss: 0.1462
+  Val mIoU: 0.6214
+
+======================================================================
+Epoch 10/20
+======================================================================
+[Epoch 10][100/1125] Loss: 0.0919
+[Epoch 10][200/1125] Loss: 0.0928
+[Epoch 10][300/1125] Loss: 0.0925
+[Epoch 10][400/1125] Loss: 0.0931
+[Epoch 10][500/1125] Loss: 0.0930
+[Epoch 10][600/1125] Loss: 0.0932
+[Epoch 10][700/1125] Loss: 0.0931
+[Epoch 10][800/1125] Loss: 0.0932
+[Epoch 10][900/1125] Loss: 0.0933
+[Epoch 10][1000/1125] Loss: 0.0931
+[Epoch 10][1100/1125] Loss: 0.0931
+
+📊 Epoch 10 Summary:
+  Train Loss: 0.0932
+  Val Loss: 0.1448
+  Val mIoU: 0.6259
+💾 Best model saved! (mIoU: 0.6259)
+
+======================================================================
+Epoch 11/20
+======================================================================
+[Epoch 11][100/1125] Loss: 0.0901
+[Epoch 11][200/1125] Loss: 0.0905
+[Epoch 11][300/1125] Loss: 0.0897
+[Epoch 11][400/1125] Loss: 0.0894
+[Epoch 11][500/1125] Loss: 0.0895
+[Epoch 11][600/1125] Loss: 0.0897
+[Epoch 11][700/1125] Loss: 0.0894
+[Epoch 11][800/1125] Loss: 0.0896
+[Epoch 11][900/1125] Loss: 0.0895
+[Epoch 11][1000/1125] Loss: 0.0896
+[Epoch 11][1100/1125] Loss: 0.0895
+
+📊 Epoch 11 Summary:
+  Train Loss: 0.0895
+  Val Loss: 0.1517
+  Val mIoU: 0.6281
+💾 Best model saved! (mIoU: 0.6281)
+
+======================================================================
+Epoch 12/20
+======================================================================
+[Epoch 12][100/1125] Loss: 0.0850
+[Epoch 12][200/1125] Loss: 0.0859
+[Epoch 12][300/1125] Loss: 0.0861
+[Epoch 12][400/1125] Loss: 0.0864
+[Epoch 12][500/1125] Loss: 0.0864
+[Epoch 12][600/1125] Loss: 0.0867
+[Epoch 12][700/1125] Loss: 0.0865
+[Epoch 12][800/1125] Loss: 0.0863
+[Epoch 12][900/1125] Loss: 0.0862
+[Epoch 12][1000/1125] Loss: 0.0861
+[Epoch 12][1100/1125] Loss: 0.0862
+
+📊 Epoch 12 Summary:
+  Train Loss: 0.0862
+  Val Loss: 0.1467
+  Val mIoU: 0.6288
+💾 Best model saved! (mIoU: 0.6288)
+
+======================================================================
+Epoch 13/20
+======================================================================
+[Epoch 13][100/1125] Loss: 0.0840
+[Epoch 13][200/1125] Loss: 0.0839
+[Epoch 13][300/1125] Loss: 0.0831
+[Epoch 13][400/1125] Loss: 0.0834
+[Epoch 13][500/1125] Loss: 0.0836
+[Epoch 13][600/1125] Loss: 0.0837
+[Epoch 13][700/1125] Loss: 0.0836
+[Epoch 13][800/1125] Loss: 0.0835
+[Epoch 13][900/1125] Loss: 0.0835
+[Epoch 13][1000/1125] Loss: 0.0835
+[Epoch 13][1100/1125] Loss: 0.0834
+
+📊 Epoch 13 Summary:
+  Train Loss: 0.0834
+  Val Loss: 0.1489
+  Val mIoU: 0.6308
+💾 Best model saved! (mIoU: 0.6308)
+
+======================================================================
+Epoch 14/20
+======================================================================
+[Epoch 14][100/1125] Loss: 0.0818
+[Epoch 14][200/1125] Loss: 0.0804
+[Epoch 14][300/1125] Loss: 0.0806
+[Epoch 14][400/1125] Loss: 0.0813
+[Epoch 14][500/1125] Loss: 0.0812
+[Epoch 14][600/1125] Loss: 0.0809
+[Epoch 14][700/1125] Loss: 0.0810
+[Epoch 14][800/1125] Loss: 0.0808
+[Epoch 14][900/1125] Loss: 0.0810
+[Epoch 14][1000/1125] Loss: 0.0811
+[Epoch 14][1100/1125] Loss: 0.0811
+
+📊 Epoch 14 Summary:
+  Train Loss: 0.0811
+  Val Loss: 0.1521
+  Val mIoU: 0.6310
+💾 Best model saved! (mIoU: 0.6310)
+
+======================================================================
+Epoch 15/20
+======================================================================
+[Epoch 15][100/1125] Loss: 0.0785
+[Epoch 15][200/1125] Loss: 0.0791
+[Epoch 15][300/1125] Loss: 0.0790
+[Epoch 15][400/1125] Loss: 0.0791
+[Epoch 15][500/1125] Loss: 0.0787
+[Epoch 15][600/1125] Loss: 0.0786
+[Epoch 15][700/1125] Loss: 0.0788
+[Epoch 15][800/1125] Loss: 0.0787
+[Epoch 15][900/1125] Loss: 0.0786
+[Epoch 15][1000/1125] Loss: 0.0789
+[Epoch 15][1100/1125] Loss: 0.0790
+
+📊 Epoch 15 Summary:
+  Train Loss: 0.0790
+  Val Loss: 0.1528
+  Val mIoU: 0.6296
+
+======================================================================
+Epoch 16/20
+======================================================================
+[Epoch 16][100/1125] Loss: 0.0779
+[Epoch 16][200/1125] Loss: 0.0775
+[Epoch 16][300/1125] Loss: 0.0774
+[Epoch 16][400/1125] Loss: 0.0776
+[Epoch 16][500/1125] Loss: 0.0774
+[Epoch 16][600/1125] Loss: 0.0775
+[Epoch 16][700/1125] Loss: 0.0775
+[Epoch 16][800/1125] Loss: 0.0774
+[Epoch 16][900/1125] Loss: 0.0773
+[Epoch 16][1000/1125] Loss: 0.0775
+[Epoch 16][1100/1125] Loss: 0.0775
+
+📊 Epoch 16 Summary:
+  Train Loss: 0.0775
+  Val Loss: 0.1543
+  Val mIoU: 0.6306
+
+======================================================================
+Epoch 17/20
+======================================================================
+[Epoch 17][100/1125] Loss: 0.0746
+[Epoch 17][200/1125] Loss: 0.0751
+[Epoch 17][300/1125] Loss: 0.0755
+[Epoch 17][400/1125] Loss: 0.0758
+[Epoch 17][500/1125] Loss: 0.0756
+[Epoch 17][600/1125] Loss: 0.0759
+[Epoch 17][700/1125] Loss: 0.0761
+[Epoch 17][800/1125] Loss: 0.0762
+[Epoch 17][900/1125] Loss: 0.0761
+[Epoch 17][1000/1125] Loss: 0.0761
+[Epoch 17][1100/1125] Loss: 0.0762
+
+📊 Epoch 17 Summary:
+  Train Loss: 0.0762
+  Val Loss: 0.1559
+  Val mIoU: 0.6303
+
+======================================================================
+Epoch 18/20
+======================================================================
+[Epoch 18][100/1125] Loss: 0.0743
+[Epoch 18][200/1125] Loss: 0.0750
+[Epoch 18][300/1125] Loss: 0.0754
+[Epoch 18][400/1125] Loss: 0.0753
+[Epoch 18][500/1125] Loss: 0.0755
+[Epoch 18][600/1125] Loss: 0.0757
+[Epoch 18][700/1125] Loss: 0.0755
+[Epoch 18][800/1125] Loss: 0.0754
+[Epoch 18][900/1125] Loss: 0.0752
+[Epoch 18][1000/1125] Loss: 0.0752
+[Epoch 18][1100/1125] Loss: 0.0753
+
+📊 Epoch 18 Summary:
+  Train Loss: 0.0753
+  Val Loss: 0.1569
+  Val mIoU: 0.6310
+
+======================================================================
+Epoch 19/20
+======================================================================
+[Epoch 19][100/1125] Loss: 0.0760
+[Epoch 19][200/1125] Loss: 0.0758
+[Epoch 19][300/1125] Loss: 0.0750
+[Epoch 19][400/1125] Loss: 0.0750
+[Epoch 19][500/1125] Loss: 0.0749
+[Epoch 19][600/1125] Loss: 0.0748
+[Epoch 19][700/1125] Loss: 0.0748
+[Epoch 19][800/1125] Loss: 0.0746
+[Epoch 19][900/1125] Loss: 0.0745
+[Epoch 19][1000/1125] Loss: 0.0746
+[Epoch 19][1100/1125] Loss: 0.0747
+
+📊 Epoch 19 Summary:
+  Train Loss: 0.0747
+  Val Loss: 0.1579
+  Val mIoU: 0.6309
+
+======================================================================
+Epoch 20/20
+======================================================================
+[Epoch 20][100/1125] Loss: 0.0748
+[Epoch 20][200/1125] Loss: 0.0747
+[Epoch 20][300/1125] Loss: 0.0748
+[Epoch 20][400/1125] Loss: 0.0746
+[Epoch 20][500/1125] Loss: 0.0747
+[Epoch 20][600/1125] Loss: 0.0745
+[Epoch 20][700/1125] Loss: 0.0745
+[Epoch 20][800/1125] Loss: 0.0746
+[Epoch 20][900/1125] Loss: 0.0744
+[Epoch 20][1000/1125] Loss: 0.0743
+[Epoch 20][1100/1125] Loss: 0.0743
+
+📊 Epoch 20 Summary:
+  Train Loss: 0.0744
+  Val Loss: 0.1581
+  Val mIoU: 0.6311
+💾 Best model saved! (mIoU: 0.6311)
+
+======================================================================
+✅ TRAINING COMPLETE!
+======================================================================
+Best mIoU: 0.6311
+======================================================================
+======================================================================
+🚀 LORA TRAINING (MV)
+======================================================================
+Start: 2025-11-24 19:29:33
+Device: cuda
+LoRA: r=16
+======================================================================
+
+ Creating base model...
+
+📂 Loading baseline decoder...
+✅ Baseline decoder loaded!
+✅ Linear-like modules found: 96
+encoder.layers.0.self_attn.k_proj
+encoder.layers.0.self_attn.v_proj
+encoder.layers.0.self_attn.q_proj
+encoder.layers.0.self_attn.out_proj
+encoder.layers.1.self_attn.k_proj
+encoder.layers.1.self_attn.v_proj
+encoder.layers.1.self_attn.q_proj
+encoder.layers.1.self_attn.out_proj
+encoder.layers.2.self_attn.k_proj
+encoder.layers.2.self_attn.v_proj
+encoder.layers.2.self_attn.q_proj
+encoder.layers.2.self_attn.out_proj
+encoder.layers.3.self_attn.k_proj
+encoder.layers.3.self_attn.v_proj
+encoder.layers.3.self_attn.q_proj
+encoder.layers.3.self_attn.out_proj
+encoder.layers.4.self_attn.k_proj
+encoder.layers.4.self_attn.v_proj
+encoder.layers.4.self_attn.q_proj
+encoder.layers.4.self_attn.out_proj
+encoder.layers.5.self_attn.k_proj
+encoder.layers.5.self_attn.v_proj
+encoder.layers.5.self_attn.q_proj
+encoder.layers.5.self_attn.out_proj
+encoder.layers.6.self_attn.k_proj
+encoder.layers.6.self_attn.v_proj
+encoder.layers.6.self_attn.q_proj
+encoder.layers.6.self_attn.out_proj
+encoder.layers.7.self_attn.k_proj
+encoder.layers.7.self_attn.v_proj
+encoder.layers.7.self_attn.q_proj
+encoder.layers.7.self_attn.out_proj
+encoder.layers.8.self_attn.k_proj
+encoder.layers.8.self_attn.v_proj
+encoder.layers.8.self_attn.q_proj
+encoder.layers.8.self_attn.out_proj
+encoder.layers.9.self_attn.k_proj
+encoder.layers.9.self_attn.v_proj
+encoder.layers.9.self_attn.q_proj
+encoder.layers.9.self_attn.out_proj
+encoder.layers.10.self_attn.k_proj
+encoder.layers.10.self_attn.v_proj
+encoder.layers.10.self_attn.q_proj
+encoder.layers.10.self_attn.out_proj
+encoder.layers.11.self_attn.k_proj
+encoder.layers.11.self_attn.v_proj
+encoder.layers.11.self_attn.q_proj
+encoder.layers.11.self_attn.out_proj
+encoder.layers.12.self_attn.k_proj
+encoder.layers.12.self_attn.v_proj
+encoder.layers.12.self_attn.q_proj
+encoder.layers.12.self_attn.out_proj
+encoder.layers.13.self_attn.k_proj
+encoder.layers.13.self_attn.v_proj
+encoder.layers.13.self_attn.q_proj
+encoder.layers.13.self_attn.out_proj
+encoder.layers.14.self_attn.k_proj
+encoder.layers.14.self_attn.v_proj
+encoder.layers.14.self_attn.q_proj
+encoder.layers.14.self_attn.out_proj
+encoder.layers.15.self_attn.k_proj
+encoder.layers.15.self_attn.v_proj
+encoder.layers.15.self_attn.q_proj
+encoder.layers.15.self_attn.out_proj
+encoder.layers.16.self_attn.k_proj
+encoder.layers.16.self_attn.v_proj
+encoder.layers.16.self_attn.q_proj
+encoder.layers.16.self_attn.out_proj
+encoder.layers.17.self_attn.k_proj
+encoder.layers.17.self_attn.v_proj
+encoder.layers.17.self_attn.q_proj
+encoder.layers.17.self_attn.out_proj
+encoder.layers.18.self_attn.k_proj
+encoder.layers.18.self_attn.v_proj
+encoder.layers.18.self_attn.q_proj
+encoder.layers.18.self_attn.out_proj
+encoder.layers.19.self_attn.k_proj
+encoder.layers.19.self_attn.v_proj
+encoder.layers.19.self_attn.q_proj
+encoder.layers.19.self_attn.out_proj
+encoder.layers.20.self_attn.k_proj
+encoder.layers.20.self_attn.v_proj
+encoder.layers.20.self_attn.q_proj
+encoder.layers.20.self_attn.out_proj
+encoder.layers.21.self_attn.k_proj
+encoder.layers.21.self_attn.v_proj
+encoder.layers.21.self_attn.q_proj
+encoder.layers.21.self_attn.out_proj
+encoder.layers.22.self_attn.k_proj
+encoder.layers.22.self_attn.v_proj
+encoder.layers.22.self_attn.q_proj
+encoder.layers.22.self_attn.out_proj
+encoder.layers.23.self_attn.k_proj
+encoder.layers.23.self_attn.v_proj
+encoder.layers.23.self_attn.q_proj
+encoder.layers.23.self_attn.out_proj
+⚠️ Non-linear modules skipped: 24
+('encoder.layers.0.self_attn', 'CLIPAttention')
+('encoder.layers.1.self_attn', 'CLIPAttention')
+('encoder.layers.2.self_attn', 'CLIPAttention')
+('encoder.layers.3.self_attn', 'CLIPAttention')
+('encoder.layers.4.self_attn', 'CLIPAttention')
+('encoder.layers.5.self_attn', 'CLIPAttention')
+('encoder.layers.6.self_attn', 'CLIPAttention')
+('encoder.layers.7.self_attn', 'CLIPAttention')
+('encoder.layers.8.self_attn', 'CLIPAttention')
+('encoder.layers.9.self_attn', 'CLIPAttention')
+('encoder.layers.10.self_attn', 'CLIPAttention')
+('encoder.layers.11.self_attn', 'CLIPAttention')
+('encoder.layers.12.self_attn', 'CLIPAttention')
+('encoder.layers.13.self_attn', 'CLIPAttention')
+('encoder.layers.14.self_attn', 'CLIPAttention')
+('encoder.layers.15.self_attn', 'CLIPAttention')
+('encoder.layers.16.self_attn', 'CLIPAttention')
+('encoder.layers.17.self_attn', 'CLIPAttention')
+('encoder.layers.18.self_attn', 'CLIPAttention')
+('encoder.layers.19.self_attn', 'CLIPAttention')
+('encoder.layers.20.self_attn', 'CLIPAttention')
+('encoder.layers.21.self_attn', 'CLIPAttention')
+('encoder.layers.22.self_attn', 'CLIPAttention')
+('encoder.layers.23.self_attn', 'CLIPAttention')
+
+🔧 Applying LoRA to CLIP...
+
+⚙️ Setting up optimizer...
+✅ Setup complete!
+   LoRA params: 3,145,728
+   Decoder params: 0
+
+======================================================================
+🎯 STARTING TRAINING
+======================================================================
+
+
+======================================================================
+Epoch 1/20
+======================================================================
+[Epoch 1][100/2250] Loss: 0.1601
+[Epoch 1][200/2250] Loss: 0.1586
+[Epoch 1][300/2250] Loss: 0.1569
+[Epoch 1][400/2250] Loss: 0.1566
+[Epoch 1][500/2250] Loss: 0.1559
+[Epoch 1][600/2250] Loss: 0.1556
+[Epoch 1][700/2250] Loss: 0.1552
+[Epoch 1][800/2250] Loss: 0.1552
+[Epoch 1][900/2250] Loss: 0.1552
+[Epoch 1][1000/2250] Loss: 0.1550
+[Epoch 1][1100/2250] Loss: 0.1548
+[Epoch 1][1200/2250] Loss: 0.1545
+[Epoch 1][1300/2250] Loss: 0.1542
+[Epoch 1][1400/2250] Loss: 0.1543
+[Epoch 1][1500/2250] Loss: 0.1539
+[Epoch 1][1600/2250] Loss: 0.1536
+[Epoch 1][1700/2250] Loss: 0.1537
+[Epoch 1][1800/2250] Loss: 0.1537
+[Epoch 1][1900/2250] Loss: 0.1535
+[Epoch 1][2000/2250] Loss: 0.1535
+[Epoch 1][2100/2250] Loss: 0.1533
+[Epoch 1][2200/2250] Loss: 0.1530
+
+📊 Epoch 1 Summary:
+  Train Loss: 0.1532
+  Val Loss: 0.1770
+  Val mIoU: 0.5536
+💾 Best model saved! (mIoU: 0.5536)
+
+======================================================================
+Epoch 2/20
+======================================================================
+[Epoch 2][100/2250] Loss: 0.1471
+[Epoch 2][200/2250] Loss: 0.1469
+[Epoch 2][300/2250] Loss: 0.1494
+[Epoch 2][400/2250] Loss: 0.1490
+[Epoch 2][500/2250] Loss: 0.1485
+[Epoch 2][600/2250] Loss: 0.1480
+[Epoch 2][700/2250] Loss: 0.1490
+[Epoch 2][800/2250] Loss: 0.1492
+[Epoch 2][900/2250] Loss: 0.1492
+[Epoch 2][1000/2250] Loss: 0.1484
+[Epoch 2][1100/2250] Loss: 0.1481
+[Epoch 2][1200/2250] Loss: 0.1480
+[Epoch 2][1300/2250] Loss: 0.1480
+[Epoch 2][1400/2250] Loss: 0.1477
+[Epoch 2][1500/2250] Loss: 0.1475
+[Epoch 2][1600/2250] Loss: 0.1472
+[Epoch 2][1700/2250] Loss: 0.1466
+[Epoch 2][1800/2250] Loss: 0.1465
+[Epoch 2][1900/2250] Loss: 0.1463
+[Epoch 2][2000/2250] Loss: 0.1461
+[Epoch 2][2100/2250] Loss: 0.1460
+[Epoch 2][2200/2250] Loss: 0.1459
+
+📊 Epoch 2 Summary:
+  Train Loss: 0.1455
+  Val Loss: 0.1673
+  Val mIoU: 0.5604
+💾 Best model saved! (mIoU: 0.5604)
+
+======================================================================
+Epoch 3/20
+======================================================================
+[Epoch 3][100/2250] Loss: 0.1440
+[Epoch 3][200/2250] Loss: 0.1437
+[Epoch 3][300/2250] Loss: 0.1419
+[Epoch 3][400/2250] Loss: 0.1421
+[Epoch 3][500/2250] Loss: 0.1417
+[Epoch 3][600/2250] Loss: 0.1408
+[Epoch 3][700/2250] Loss: 0.1403
+[Epoch 3][800/2250] Loss: 0.1404
+[Epoch 3][900/2250] Loss: 0.1406
+[Epoch 3][1000/2250] Loss: 0.1402
+[Epoch 3][1100/2250] Loss: 0.1403
+[Epoch 3][1200/2250] Loss: 0.1400
+[Epoch 3][1300/2250] Loss: 0.1403
+[Epoch 3][1400/2250] Loss: 0.1402
+[Epoch 3][1500/2250] Loss: 0.1402
+[Epoch 3][1600/2250] Loss: 0.1400
+[Epoch 3][1700/2250] Loss: 0.1396
+[Epoch 3][1800/2250] Loss: 0.1397
+[Epoch 3][1900/2250] Loss: 0.1397
+[Epoch 3][2000/2250] Loss: 0.1397
+[Epoch 3][2100/2250] Loss: 0.1394
+[Epoch 3][2200/2250] Loss: 0.1394
+
+📊 Epoch 3 Summary:
+  Train Loss: 0.1393
+  Val Loss: 0.1589
+  Val mIoU: 0.5684
+💾 Best model saved! (mIoU: 0.5684)
+
+======================================================================
+Epoch 4/20
+======================================================================
+[Epoch 4][100/2250] Loss: 0.1340
+[Epoch 4][200/2250] Loss: 0.1322
+[Epoch 4][300/2250] Loss: 0.1337
+[Epoch 4][400/2250] Loss: 0.1342
+[Epoch 4][500/2250] Loss: 0.1349
+[Epoch 4][600/2250] Loss: 0.1357
+[Epoch 4][700/2250] Loss: 0.1353
+[Epoch 4][800/2250] Loss: 0.1354
+[Epoch 4][900/2250] Loss: 0.1355
+[Epoch 4][1000/2250] Loss: 0.1353
+[Epoch 4][1100/2250] Loss: 0.1352
+[Epoch 4][1200/2250] Loss: 0.1352
+[Epoch 4][1300/2250] Loss: 0.1353
+[Epoch 4][1400/2250] Loss: 0.1349
+[Epoch 4][1500/2250] Loss: 0.1346
+[Epoch 4][1600/2250] Loss: 0.1346
+[Epoch 4][1700/2250] Loss: 0.1346
+[Epoch 4][1800/2250] Loss: 0.1347
+[Epoch 4][1900/2250] Loss: 0.1346
+[Epoch 4][2000/2250] Loss: 0.1344
+[Epoch 4][2100/2250] Loss: 0.1342
+[Epoch 4][2200/2250] Loss: 0.1343
+
+📊 Epoch 4 Summary:
+  Train Loss: 0.1340
+  Val Loss: 0.1542
+  Val mIoU: 0.5715
+💾 Best model saved! (mIoU: 0.5715)
+
+======================================================================
+Epoch 5/20
+======================================================================
+[Epoch 5][100/2250] Loss: 0.1352
+[Epoch 5][200/2250] Loss: 0.1333
+[Epoch 5][300/2250] Loss: 0.1319
+[Epoch 5][400/2250] Loss: 0.1297
+[Epoch 5][500/2250] Loss: 0.1283
+[Epoch 5][600/2250] Loss: 0.1290
+[Epoch 5][700/2250] Loss: 0.1288
+[Epoch 5][800/2250] Loss: 0.1293
+[Epoch 5][900/2250] Loss: 0.1291
+[Epoch 5][1000/2250] Loss: 0.1288
+[Epoch 5][1100/2250] Loss: 0.1283
+[Epoch 5][1200/2250] Loss: 0.1283
+[Epoch 5][1300/2250] Loss: 0.1284
+[Epoch 5][1400/2250] Loss: 0.1286
+[Epoch 5][1500/2250] Loss: 0.1289
+[Epoch 5][1600/2250] Loss: 0.1290
+[Epoch 5][1700/2250] Loss: 0.1288
+[Epoch 5][1800/2250] Loss: 0.1288
+[Epoch 5][1900/2250] Loss: 0.1291
+[Epoch 5][2000/2250] Loss: 0.1290
+[Epoch 5][2100/2250] Loss: 0.1290
+[Epoch 5][2200/2250] Loss: 0.1288
+
+📊 Epoch 5 Summary:
+  Train Loss: 0.1288
+  Val Loss: 0.1516
+  Val mIoU: 0.5756
+💾 Best model saved! (mIoU: 0.5756)
+
+======================================================================
+Epoch 6/20
+======================================================================
+[Epoch 6][100/2250] Loss: 0.1235
+[Epoch 6][200/2250] Loss: 0.1252
+[Epoch 6][300/2250] Loss: 0.1246
+[Epoch 6][400/2250] Loss: 0.1242
+[Epoch 6][500/2250] Loss: 0.1246
+[Epoch 6][600/2250] Loss: 0.1254
+[Epoch 6][700/2250] Loss: 0.1258
+[Epoch 6][800/2250] Loss: 0.1254
+[Epoch 6][900/2250] Loss: 0.1257
+[Epoch 6][1000/2250] Loss: 0.1257
+[Epoch 6][1100/2250] Loss: 0.1255
+[Epoch 6][1200/2250] Loss: 0.1257
+[Epoch 6][1300/2250] Loss: 0.1258
+[Epoch 6][1400/2250] Loss: 0.1257
+[Epoch 6][1500/2250] Loss: 0.1258
+[Epoch 6][1600/2250] Loss: 0.1253
+[Epoch 6][1700/2250] Loss: 0.1251
+[Epoch 6][1800/2250] Loss: 0.1251
+[Epoch 6][1900/2250] Loss: 0.1249
+[Epoch 6][2000/2250] Loss: 0.1246
+[Epoch 6][2100/2250] Loss: 0.1248
+[Epoch 6][2200/2250] Loss: 0.1250
+
+📊 Epoch 6 Summary:
+  Train Loss: 0.1249
+  Val Loss: 0.1490
+  Val mIoU: 0.5804
+💾 Best model saved! (mIoU: 0.5804)
+
+======================================================================
+Epoch 7/20
+======================================================================
+[Epoch 7][100/2250] Loss: 0.1209
+[Epoch 7][200/2250] Loss: 0.1235
+[Epoch 7][300/2250] Loss: 0.1224
+[Epoch 7][400/2250] Loss: 0.1213
+[Epoch 7][500/2250] Loss: 0.1209
+[Epoch 7][600/2250] Loss: 0.1210
+[Epoch 7][700/2250] Loss: 0.1207
+[Epoch 7][800/2250] Loss: 0.1211
+[Epoch 7][900/2250] Loss: 0.1208
+[Epoch 7][1000/2250] Loss: 0.1213
+[Epoch 7][1100/2250] Loss: 0.1209
+[Epoch 7][1200/2250] Loss: 0.1207
+[Epoch 7][1300/2250] Loss: 0.1204
+[Epoch 7][1400/2250] Loss: 0.1209
+[Epoch 7][1500/2250] Loss: 0.1209
+[Epoch 7][1600/2250] Loss: 0.1210
+[Epoch 7][1700/2250] Loss: 0.1210
+[Epoch 7][1800/2250] Loss: 0.1209
+[Epoch 7][1900/2250] Loss: 0.1208
+[Epoch 7][2000/2250] Loss: 0.1208
+[Epoch 7][2100/2250] Loss: 0.1211
+[Epoch 7][2200/2250] Loss: 0.1209
+
+📊 Epoch 7 Summary:
+  Train Loss: 0.1209
+  Val Loss: 0.1479
+  Val mIoU: 0.5801
+
+======================================================================
+Epoch 8/20
+======================================================================
+[Epoch 8][100/2250] Loss: 0.1152
+[Epoch 8][200/2250] Loss: 0.1172
+[Epoch 8][300/2250] Loss: 0.1179
+[Epoch 8][400/2250] Loss: 0.1179
+[Epoch 8][500/2250] Loss: 0.1177
+[Epoch 8][600/2250] Loss: 0.1175
+[Epoch 8][700/2250] Loss: 0.1174
+[Epoch 8][800/2250] Loss: 0.1172
+[Epoch 8][900/2250] Loss: 0.1170
+[Epoch 8][1000/2250] Loss: 0.1172
+[Epoch 8][1100/2250] Loss: 0.1170
+[Epoch 8][1200/2250] Loss: 0.1173
+[Epoch 8][1300/2250] Loss: 0.1172
+[Epoch 8][1400/2250] Loss: 0.1175
+[Epoch 8][1500/2250] Loss: 0.1173
+[Epoch 8][1600/2250] Loss: 0.1170
+[Epoch 8][1700/2250] Loss: 0.1172
+[Epoch 8][1800/2250] Loss: 0.1171
+[Epoch 8][1900/2250] Loss: 0.1173
+[Epoch 8][2000/2250] Loss: 0.1173
+[Epoch 8][2100/2250] Loss: 0.1175
+[Epoch 8][2200/2250] Loss: 0.1175
+
+📊 Epoch 8 Summary:
+  Train Loss: 0.1176
+  Val Loss: 0.1461
+  Val mIoU: 0.5813
+💾 Best model saved! (mIoU: 0.5813)
+
+======================================================================
+Epoch 9/20
+======================================================================
+[Epoch 9][100/2250] Loss: 0.1135
+[Epoch 9][200/2250] Loss: 0.1140
+[Epoch 9][300/2250] Loss: 0.1151
+[Epoch 9][400/2250] Loss: 0.1143
+[Epoch 9][500/2250] Loss: 0.1150
+[Epoch 9][600/2250] Loss: 0.1149
+[Epoch 9][700/2250] Loss: 0.1145
+[Epoch 9][800/2250] Loss: 0.1151
+[Epoch 9][900/2250] Loss: 0.1150
+[Epoch 9][1000/2250] Loss: 0.1146
+[Epoch 9][1100/2250] Loss: 0.1147
+[Epoch 9][1200/2250] Loss: 0.1147
+[Epoch 9][1300/2250] Loss: 0.1147
+[Epoch 9][1400/2250] Loss: 0.1150
+[Epoch 9][1500/2250] Loss: 0.1147
+[Epoch 9][1600/2250] Loss: 0.1147
+[Epoch 9][1700/2250] Loss: 0.1147
+[Epoch 9][1800/2250] Loss: 0.1147
+[Epoch 9][1900/2250] Loss: 0.1148
+[Epoch 9][2000/2250] Loss: 0.1147
+[Epoch 9][2100/2250] Loss: 0.1148
+[Epoch 9][2200/2250] Loss: 0.1148
+
+📊 Epoch 9 Summary:
+  Train Loss: 0.1147
+  Val Loss: 0.1460
+  Val mIoU: 0.5842
+💾 Best model saved! (mIoU: 0.5842)
+
+======================================================================
+Epoch 10/20
+======================================================================
+[Epoch 10][100/2250] Loss: 0.1097
+[Epoch 10][200/2250] Loss: 0.1100
+[Epoch 10][300/2250] Loss: 0.1100
+[Epoch 10][400/2250] Loss: 0.1102
+[Epoch 10][500/2250] Loss: 0.1107
+[Epoch 10][600/2250] Loss: 0.1116
+[Epoch 10][700/2250] Loss: 0.1118
+[Epoch 10][800/2250] Loss: 0.1121
+[Epoch 10][900/2250] Loss: 0.1118
+[Epoch 10][1000/2250] Loss: 0.1120
+[Epoch 10][1100/2250] Loss: 0.1117
+[Epoch 10][1200/2250] Loss: 0.1121
+[Epoch 10][1300/2250] Loss: 0.1120
+[Epoch 10][1400/2250] Loss: 0.1117
+[Epoch 10][1500/2250] Loss: 0.1118
+[Epoch 10][1600/2250] Loss: 0.1119
+[Epoch 10][1700/2250] Loss: 0.1121
+[Epoch 10][1800/2250] Loss: 0.1121
+[Epoch 10][1900/2250] Loss: 0.1121
+[Epoch 10][2000/2250] Loss: 0.1123
+[Epoch 10][2100/2250] Loss: 0.1123
+[Epoch 10][2200/2250] Loss: 0.1121
+
+📊 Epoch 10 Summary:
+  Train Loss: 0.1120
+  Val Loss: 0.1467
+  Val mIoU: 0.5854
+💾 Best model saved! (mIoU: 0.5854)
+
+======================================================================
+Epoch 11/20
+======================================================================
+[Epoch 11][100/2250] Loss: 0.1118
+[Epoch 11][200/2250] Loss: 0.1113
+[Epoch 11][300/2250] Loss: 0.1107
+[Epoch 11][400/2250] Loss: 0.1105
+[Epoch 11][500/2250] Loss: 0.1106
+[Epoch 11][600/2250] Loss: 0.1104
+[Epoch 11][700/2250] Loss: 0.1106
+[Epoch 11][800/2250] Loss: 0.1106
+[Epoch 11][900/2250] Loss: 0.1101
+[Epoch 11][1000/2250] Loss: 0.1098
+[Epoch 11][1100/2250] Loss: 0.1098
+[Epoch 11][1200/2250] Loss: 0.1098
+[Epoch 11][1300/2250] Loss: 0.1096
+[Epoch 11][1400/2250] Loss: 0.1095
+[Epoch 11][1500/2250] Loss: 0.1094
+[Epoch 11][1600/2250] Loss: 0.1095
+[Epoch 11][1700/2250] Loss: 0.1097
+[Epoch 11][1800/2250] Loss: 0.1097
+[Epoch 11][1900/2250] Loss: 0.1098
+[Epoch 11][2000/2250] Loss: 0.1097
+[Epoch 11][2100/2250] Loss: 0.1098
+[Epoch 11][2200/2250] Loss: 0.1098
+
+📊 Epoch 11 Summary:
+  Train Loss: 0.1097
+  Val Loss: 0.1447
+  Val mIoU: 0.5871
+💾 Best model saved! (mIoU: 0.5871)
+
+======================================================================
+Epoch 12/20
+======================================================================
+[Epoch 12][100/2250] Loss: 0.1067
+[Epoch 12][200/2250] Loss: 0.1069
+[Epoch 12][300/2250] Loss: 0.1071
+[Epoch 12][400/2250] Loss: 0.1079
+[Epoch 12][500/2250] Loss: 0.1079
+[Epoch 12][600/2250] Loss: 0.1072
+[Epoch 12][700/2250] Loss: 0.1072
+[Epoch 12][800/2250] Loss: 0.1074
+[Epoch 12][900/2250] Loss: 0.1077
+[Epoch 12][1000/2250] Loss: 0.1078
+[Epoch 12][1100/2250] Loss: 0.1074
+[Epoch 12][1200/2250] Loss: 0.1074
+[Epoch 12][1300/2250] Loss: 0.1071
+[Epoch 12][1400/2250] Loss: 0.1068
+[Epoch 12][1500/2250] Loss: 0.1070
+[Epoch 12][1600/2250] Loss: 0.1071
+[Epoch 12][1700/2250] Loss: 0.1073
+[Epoch 12][1800/2250] Loss: 0.1073
+[Epoch 12][1900/2250] Loss: 0.1076
+[Epoch 12][2000/2250] Loss: 0.1077
+[Epoch 12][2100/2250] Loss: 0.1077
+[Epoch 12][2200/2250] Loss: 0.1078
+
+📊 Epoch 12 Summary:
+  Train Loss: 0.1078
+  Val Loss: 0.1449
+  Val mIoU: 0.5866
+
+======================================================================
+Epoch 13/20
+======================================================================
+[Epoch 13][100/2250] Loss: 0.1088
+[Epoch 13][200/2250] Loss: 0.1082
+[Epoch 13][300/2250] Loss: 0.1067
+[Epoch 13][400/2250] Loss: 0.1061
+[Epoch 13][500/2250] Loss: 0.1072
+[Epoch 13][600/2250] Loss: 0.1068
+[Epoch 13][700/2250] Loss: 0.1063
+[Epoch 13][800/2250] Loss: 0.1062
+[Epoch 13][900/2250] Loss: 0.1054
+[Epoch 13][1000/2250] Loss: 0.1056
+[Epoch 13][1100/2250] Loss: 0.1057
+[Epoch 13][1200/2250] Loss: 0.1056
+[Epoch 13][1300/2250] Loss: 0.1058
+[Epoch 13][1400/2250] Loss: 0.1056
+[Epoch 13][1500/2250] Loss: 0.1056
+[Epoch 13][1600/2250] Loss: 0.1058
+[Epoch 13][1700/2250] Loss: 0.1059
+[Epoch 13][1800/2250] Loss: 0.1057
+[Epoch 13][1900/2250] Loss: 0.1058
+[Epoch 13][2000/2250] Loss: 0.1059
+[Epoch 13][2100/2250] Loss: 0.1058
+[Epoch 13][2200/2250] Loss: 0.1060
+
+📊 Epoch 13 Summary:
+  Train Loss: 0.1061
+  Val Loss: 0.1446
+  Val mIoU: 0.5896
+💾 Best model saved! (mIoU: 0.5896)
+
+======================================================================
+Epoch 14/20
+======================================================================
+[Epoch 14][100/2250] Loss: 0.1078
+[Epoch 14][200/2250] Loss: 0.1046
+[Epoch 14][300/2250] Loss: 0.1040
+[Epoch 14][400/2250] Loss: 0.1036
+[Epoch 14][500/2250] Loss: 0.1045
+[Epoch 14][600/2250] Loss: 0.1049
+[Epoch 14][700/2250] Loss: 0.1049
+[Epoch 14][800/2250] Loss: 0.1049
+[Epoch 14][900/2250] Loss: 0.1047
+[Epoch 14][1000/2250] Loss: 0.1045
+[Epoch 14][1100/2250] Loss: 0.1045
+[Epoch 14][1200/2250] Loss: 0.1046
+[Epoch 14][1300/2250] Loss: 0.1046
+[Epoch 14][1400/2250] Loss: 0.1043
+[Epoch 14][1500/2250] Loss: 0.1046
+[Epoch 14][1600/2250] Loss: 0.1046
+[Epoch 14][1700/2250] Loss: 0.1045
+[Epoch 14][1800/2250] Loss: 0.1046
+[Epoch 14][1900/2250] Loss: 0.1047
+[Epoch 14][2000/2250] Loss: 0.1047
+[Epoch 14][2100/2250] Loss: 0.1047
+[Epoch 14][2200/2250] Loss: 0.1046
+
+📊 Epoch 14 Summary:
+  Train Loss: 0.1046
+  Val Loss: 0.1461
+  Val mIoU: 0.5880
+
+======================================================================
+Epoch 15/20
+======================================================================
+[Epoch 15][100/2250] Loss: 0.0992
+[Epoch 15][200/2250] Loss: 0.1026
+[Epoch 15][300/2250] Loss: 0.1031
+[Epoch 15][400/2250] Loss: 0.1029
+[Epoch 15][500/2250] Loss: 0.1029
+[Epoch 15][600/2250] Loss: 0.1023
+[Epoch 15][700/2250] Loss: 0.1029
+[Epoch 15][800/2250] Loss: 0.1032
+[Epoch 15][900/2250] Loss: 0.1034
+[Epoch 15][1000/2250] Loss: 0.1031
+[Epoch 15][1100/2250] Loss: 0.1032
+[Epoch 15][1200/2250] Loss: 0.1031
+[Epoch 15][1300/2250] Loss: 0.1032
+[Epoch 15][1400/2250] Loss: 0.1030
+[Epoch 15][1500/2250] Loss: 0.1030
+[Epoch 15][1600/2250] Loss: 0.1032
+[Epoch 15][1700/2250] Loss: 0.1031
+[Epoch 15][1800/2250] Loss: 0.1030
+[Epoch 15][1900/2250] Loss: 0.1031
+[Epoch 15][2000/2250] Loss: 0.1031
+[Epoch 15][2100/2250] Loss: 0.1031
+[Epoch 15][2200/2250] Loss: 0.1032
+
+📊 Epoch 15 Summary:
+  Train Loss: 0.1031
+  Val Loss: 0.1450
+  Val mIoU: 0.5891
+
+======================================================================
+Epoch 16/20
+======================================================================
+[Epoch 16][100/2250] Loss: 0.1024
+[Epoch 16][200/2250] Loss: 0.1012
+[Epoch 16][300/2250] Loss: 0.1009
+[Epoch 16][400/2250] Loss: 0.1008
+[Epoch 16][500/2250] Loss: 0.1018
+[Epoch 16][600/2250] Loss: 0.1021
+[Epoch 16][700/2250] Loss: 0.1020
+[Epoch 16][800/2250] Loss: 0.1019
+[Epoch 16][900/2250] Loss: 0.1019
+[Epoch 16][1000/2250] Loss: 0.1018
+[Epoch 16][1100/2250] Loss: 0.1019
+[Epoch 16][1200/2250] Loss: 0.1020
+[Epoch 16][1300/2250] Loss: 0.1019
+[Epoch 16][1400/2250] Loss: 0.1017
+[Epoch 16][1500/2250] Loss: 0.1018
+[Epoch 16][1600/2250] Loss: 0.1020
+[Epoch 16][1700/2250] Loss: 0.1020
+[Epoch 16][1800/2250] Loss: 0.1023
+[Epoch 16][1900/2250] Loss: 0.1023
+[Epoch 16][2000/2250] Loss: 0.1024
+[Epoch 16][2100/2250] Loss: 0.1023
+[Epoch 16][2200/2250] Loss: 0.1024
+
+📊 Epoch 16 Summary:
+  Train Loss: 0.1024
+  Val Loss: 0.1451
+  Val mIoU: 0.5901
+💾 Best model saved! (mIoU: 0.5901)
+
+======================================================================
+Epoch 17/20
+======================================================================
+[Epoch 17][100/2250] Loss: 0.1003
+[Epoch 17][200/2250] Loss: 0.1005
+[Epoch 17][300/2250] Loss: 0.0999
+[Epoch 17][400/2250] Loss: 0.1009
+[Epoch 17][500/2250] Loss: 0.1010
+[Epoch 17][600/2250] Loss: 0.1011
+[Epoch 17][700/2250] Loss: 0.1009
+[Epoch 17][800/2250] Loss: 0.1004
+[Epoch 17][900/2250] Loss: 0.1007
+[Epoch 17][1000/2250] Loss: 0.1008
+[Epoch 17][1100/2250] Loss: 0.1009
+[Epoch 17][1200/2250] Loss: 0.1009
+[Epoch 17][1300/2250] Loss: 0.1015
+[Epoch 17][1400/2250] Loss: 0.1016
+[Epoch 17][1500/2250] Loss: 0.1018
+[Epoch 17][1600/2250] Loss: 0.1019
+[Epoch 17][1700/2250] Loss: 0.1017
+[Epoch 17][1800/2250] Loss: 0.1015
+[Epoch 17][1900/2250] Loss: 0.1017
+[Epoch 17][2000/2250] Loss: 0.1015
+[Epoch 17][2100/2250] Loss: 0.1015
+[Epoch 17][2200/2250] Loss: 0.1017
+
+📊 Epoch 17 Summary:
+  Train Loss: 0.1016
+  Val Loss: 0.1453
+  Val mIoU: 0.5893
+
+======================================================================
+Epoch 18/20
+======================================================================
+[Epoch 18][100/2250] Loss: 0.1006
+[Epoch 18][200/2250] Loss: 0.1006
+[Epoch 18][300/2250] Loss: 0.1014
+[Epoch 18][400/2250] Loss: 0.1022
+[Epoch 18][500/2250] Loss: 0.1017
+[Epoch 18][600/2250] Loss: 0.1020
+[Epoch 18][700/2250] Loss: 0.1015
+[Epoch 18][800/2250] Loss: 0.1013
+[Epoch 18][900/2250] Loss: 0.1015
+[Epoch 18][1000/2250] Loss: 0.1017
+[Epoch 18][1100/2250] Loss: 0.1017
+[Epoch 18][1200/2250] Loss: 0.1016
+[Epoch 18][1300/2250] Loss: 0.1013
+[Epoch 18][1400/2250] Loss: 0.1012
+[Epoch 18][1500/2250] Loss: 0.1013
+[Epoch 18][1600/2250] Loss: 0.1012
+[Epoch 18][1700/2250] Loss: 0.1013
+[Epoch 18][1800/2250] Loss: 0.1012
+[Epoch 18][1900/2250] Loss: 0.1012
+[Epoch 18][2000/2250] Loss: 0.1011
+[Epoch 18][2100/2250] Loss: 0.1011
+[Epoch 18][2200/2250] Loss: 0.1012
+
+📊 Epoch 18 Summary:
+  Train Loss: 0.1012
+  Val Loss: 0.1454
+  Val mIoU: 0.5893
+
+======================================================================
+Epoch 19/20
+======================================================================
+[Epoch 19][100/2250] Loss: 0.0987
+[Epoch 19][200/2250] Loss: 0.0989
+[Epoch 19][300/2250] Loss: 0.1000
+[Epoch 19][400/2250] Loss: 0.0997
+[Epoch 19][500/2250] Loss: 0.1001
+[Epoch 19][600/2250] Loss: 0.1005
+[Epoch 19][700/2250] Loss: 0.1005
+[Epoch 19][800/2250] Loss: 0.1005
+[Epoch 19][900/2250] Loss: 0.1007
+[Epoch 19][1000/2250] Loss: 0.1009
+[Epoch 19][1100/2250] Loss: 0.1006
+[Epoch 19][1200/2250] Loss: 0.1005
+[Epoch 19][1300/2250] Loss: 0.1006
+[Epoch 19][1400/2250] Loss: 0.1003
+[Epoch 19][1500/2250] Loss: 0.1004
+[Epoch 19][1600/2250] Loss: 0.1004
+[Epoch 19][1700/2250] Loss: 0.1005
+[Epoch 19][1800/2250] Loss: 0.1006
+[Epoch 19][1900/2250] Loss: 0.1006
+[Epoch 19][2000/2250] Loss: 0.1005
+[Epoch 19][2100/2250] Loss: 0.1006
+[Epoch 19][2200/2250] Loss: 0.1006
+
+📊 Epoch 19 Summary:
+  Train Loss: 0.1007
+  Val Loss: 0.1453
+  Val mIoU: 0.5903
+💾 Best model saved! (mIoU: 0.5903)
+
+======================================================================
+Epoch 20/20
+======================================================================
+[Epoch 20][100/2250] Loss: 0.0995
+[Epoch 20][200/2250] Loss: 0.0989
+[Epoch 20][300/2250] Loss: 0.0995
+[Epoch 20][400/2250] Loss: 0.0988
+[Epoch 20][500/2250] Loss: 0.0992
+[Epoch 20][600/2250] Loss: 0.0988
+[Epoch 20][700/2250] Loss: 0.0988
+[Epoch 20][800/2250] Loss: 0.0991
+[Epoch 20][900/2250] Loss: 0.0997
+[Epoch 20][1000/2250] Loss: 0.0999
+[Epoch 20][1100/2250] Loss: 0.0999
+[Epoch 20][1200/2250] Loss: 0.1001
+[Epoch 20][1300/2250] Loss: 0.1004
+[Epoch 20][1400/2250] Loss: 0.1006
+[Epoch 20][1500/2250] Loss: 0.1006
+[Epoch 20][1600/2250] Loss: 0.1005
+[Epoch 20][1700/2250] Loss: 0.1006
+[Epoch 20][1800/2250] Loss: 0.1004
+[Epoch 20][1900/2250] Loss: 0.1005
+[Epoch 20][2000/2250] Loss: 0.1006
+[Epoch 20][2100/2250] Loss: 0.1007
+[Epoch 20][2200/2250] Loss: 0.1006
+
+📊 Epoch 20 Summary:
+  Train Loss: 0.1007
+  Val Loss: 0.1454
+  Val mIoU: 0.5899
+
+======================================================================
+✅ TRAINING COMPLETE!
+======================================================================
+Best mIoU: 0.5903
+======================================================================

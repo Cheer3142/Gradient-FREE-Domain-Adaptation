@@ -1,0 +1,252 @@
+https://www.youtube.com/@umarjamilai/videos
+https://vpn.xjtu.edu.cn/
+https://huggingface.co/mart9992/eri2/tree/main
+https://huggingface.co/docs/peft/main/en/task_guides/semantic_segmentation_lora#semantic-segmentation-using-lora
+https://www.kaggle.com/code/cheer001/notebook5f3073ce04/edit
+https://github.com/CSAILVision/semantic-segmentation-pytorch/tree/master
+
+
+Bug:
+1. eval_lora.sh and run_lora.sh performance diff
+
+
+
+ssh chenyinjia@10.184.17.27
+Patcharadanai0898+
+
+
+
+Simple Step
+conda activate catseg 
+cd /home/chenyinjia/domain-lora/SemLA-main/catseg
+export DETECTRON2_DATASETS="/home/chenyinjia/data/dataset/"
+
+λ conda create --name freeseg --clone catseg
+λ conda activate root
+λ conda env export > environment_root.yml
+λ conda list --explicit > spec_file_root.txt
+
+
+Add-on
+export 'PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True'
+
+
+The Experiment
+python generate_embeddings.py --source_domains config/source_domains.yaml --lora_library_path catseg/loradb/ 
+
+
+Eval
+1. sh eval_lora.sh configs/acdc/rain/lora-rain-acdc.yaml 1 output/acdc-rain/ MODEL.LORA.NAME acdc-rain
+2. sh eval_lora.sh configs/cityscapes/normal/lora-normal.yaml 1  output/cs-normal/ MODEL.LORA.NAME cs-normal
+
+sh eval_lora.sh configs/acdc/snow/lora-snow-acdc.yaml 1 output/acdc-snow/ MODEL.BLORA.NAME acdc-snow
+
+
+
+
+nohup .... &
+cat nohup.out
+
+Train
+1.  sh run_lora.sh configs/acdc/rain/lora-rain-acdc.yaml 1 output/acdc-rain/ MODEL.LORA.NAME acdc-rain
+    sh run_lora.sh configs/acdc/fog/lora-fog-acdc.yaml 1 output/acdc-fog/ MODEL.LORA.NAME acdc-fog
+2.  sh run_lora.sh configs/cityscapes/normal/lora-normal.yaml 1 output/cs-normal/ MODEL.LORA.NAME cs-normal
+
+
+
+    sh run_lora.sh configs/acdc/snow/lora-snow-acdc.yaml 1 output/acdc-snow/ MODEL.LORA.NAME acdc-snow
+    sh run_lora.sh configs/acdc/night/lora-night-acdc.yaml 1 output/acdc-night/ MODEL.LORA.NAME acdc-night
+
+3.  sh run_lora.sh configs/mv/mv.yaml 1 output/mv/ MODEL.LORA.NAME mv (Memory Error)
+4.  sh run_lora.sh configs/nyu/nyu.yaml 1 output/nyu/ MODEL.LORA.NAME nyu
+
+์Block-Lora
+1.  sh run_lora.sh configs/acdc/rain/lora-rain-acdc.yaml 1 output/acdc-rain/ MODEL.BLORA.NAME acdc-rain
+    sh run_lora.sh configs/acdc/fog/lora-fog-acdc.yaml 1 output/acdc-fog/ MODEL.BLORA.NAME acdc-fog
+    sh run_lora.sh configs/acdc/snow/lora-snow-acdc.yaml 1 output/acdc-snow/ MODEL.BLORA.NAME acdc-snow
+
+
+
+
+2.  sh run_lora.sh configs/cityscapes/normal/lora-normal.yaml 1 output/cs-normal/ MODEL.BLORA.NAME cs-normal
+
+
+
+/home/chenyinjia/domain-lora/SemLA-main/catseg/configs/mv/mv.yaml
+
+
+Jupyter Notebook in Background:
+1. cd /path/to/your/notebook + pip install nbconvert
+
+2.1 Run the notebook in the background with nohup
+nohup jupyter nbconvert --execute --to notebook --inplace NGLoRA.ipynb &
+
+
+
+
+
+
+2.2 Or if you want to save output to a new file
+nohup jupyter nbconvert --execute --to notebook --output train_sum_3dataset_newversion.ipynb train_2024.ipynb &
+
+2.3 turn to python
+jupyter nbconvert --to python train_LORA.ipynb
+
+kill -9 'nohup jupyter nbconvert --execute --to notebook --inplace train_sum_dataset.ipynb &'
+
+
+Download file ssh:
+pscp.exe chenyinjia@10.184.17.27:/home/chenyinjia/domain-lora/BLORA-SEG/Train-LoRA/BLoRA-Ultimate/train_LORA.ipynb d:\
+Patcharadanai0898+
+
+
+Install Step
+conda create -n SegFormer python=3.10
+cd /home/chenyinjia/domain-lora/SemLA-main
+conda install git
+conda install -c conda-forge ipywidgets
+
+1. conda activate catseg 
+3. conda install pytorch==2.4.0 torchvision==0.19.0 torchaudio==2.4.0 pytorch-cuda=12.4 -c pytorch -c nvidia
+4. python -m pip install -e /home/chenyinjia/plugin/detectron2-main
+5. pip install -r requirements.txt
+6. pip install requests==2.27.1
+
+
+Find word
+- grep -r "requires_grad" /home/chenyinjia/domain-lora/SemLA-main/catseg/
+
+
+pip install /home/chenyinjia/data/zip/clip_pip_dir/CLIP-main 
+
+To Check GPU Usage:
+- nvidia-smi
+
+Display all file Memory
+- du -bsh * 
+
+- Memory Check
+free -h
+- Clear
+free && sync && echo 3 > /proc/sys/vm/drop_caches && free 
+
+- PC Check
+cat /etc/os-release
+
+- Count File
+ls -1 | wc -l
+
+- เช็ค meory size folder
+du -h --max-depth=1
+
+- เช็ค meory size file
+stat file.txt
+
+- สั่งลบไฟล์ทั้งหมดในทุกโฟลเดอร์ย่อย
+find . -type f -name "*.pth" -delete
+
+- DETECTRON2_DATASETS
+export DETECTRON2_DATASETS="/home/chenyinjia/data/dataset/"
+export 'PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True'
+export CITYSCAPES_DATASET = "/home/chenyinjia/data/dataset/cityscapes/"
+cd $DETECTRON2_DATASETS
+
+
+# Install huggingface_hub if not already installed
+pip install huggingface_hub
+
+# Download the model using CLI
+huggingface-cli download openai/clip-vit-large-patch14 --local-dir ./clip-model
+
+SOLVER:
+  AMP:
+    ENABLED: True
+https://medium.com/data-science/the-mystery-behind-the-pytorch-automatic-mixed-precision-library-d9386e4b787e
+
+
+
+
+from opt_einsum import contract
+
+Please check the domain_args function in domain_orchestrator/utils.py 
+for the expected directory name and structure for each dataset.
+
+unzip
+zip -r both-lora-db.zip /home/chenyinjia/Nink
+
+pscp.exe chenyinjia@10.184.17.27:/home/chenyinjia/domain-lora/BLORA-SEG/Rebirth/HugFace/NGLoRA.ipynb d:\
+Patcharadanai0898+
+
+catseg
+# For ViT-B variant
+sh run.sh configs/vitb_384.yaml 4 output/
+# For ViT-L variant
+sh run.sh configs/vitl_336.yaml 4 output/
+
+
+
+
+
+Dataset
+1. CoCo
+Download the COCO (2017) images from https://cocodataset.org/
+wget http://images.cocodataset.org/zips/train2017.zip
+wget http://images.cocodataset.org/zips/val2017.zip
+
+Download the COCO-Stuff annotation from https://github.com/nightrome/cocostuff.
+wget http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/stuffthingmaps_trainval2017.zip
+
+
+
+2. ACDC
+wget https://acdc.vision.ee.ethz.ch/gt_trainval.zip
+
+
+3. ADE20K2016
+http://sceneparsing.csail.mit.edu/
+python /home/chenyinjia/domain-lora/SemLA-main/catseg/datasets/prepare_ade20k_sem_seg.py
+
+4. nyudv2
+
+
+5. PASCAL Context (PC-59)
+
+cd $DETECTRON2_DATASETS
+wget http://host.robots.ox.ac.uk/pascal/VOC/voc2010/VOCtrainval_03-May-2010.tar
+# generate folder VOCdevkit/VOC2010
+tar -xvf VOCtrainval_03-May-2010.tar 
+wget https://www.cs.stanford.edu/~roozbeh/pascal-context/trainval.tar.gz
+# generate folder VOCdevkit/VOC2010/trainval
+tar -xvzf trainval.tar.gz -C VOCdevkit/VOC2010 
+wget https://codalabuser.blob.core.windows.net/public/trainval_merged.json -P VOCdevkit/VOC2010/
+
+6. CityScape
+wget --keep-session-cookies --save-cookies=cookies.txt --post-data 'username=CHEE12&password=Cheer123+&submit=Login' https://www.cityscapes-dataset.com/login/
+pip install git+https://github.com/mcordts/cityscapesScripts.git
+export CITYSCAPES_DATASET="/home/chenyinjia/data/dataset/cityscapes/"
+
+
+cheer@GPU-SYS-4029GP-TRT2:~$ lsb_release -a
+No LSB modules are available.
+Distributor ID: Ubuntu
+Description:    Ubuntu 16.04.7 LTS
+Release:        16.04
+Codename:       xenial
+
+
+cheer@GPU-SYS-4029GP-TRT2:~$ ls -l ~/.ssh
+ssh-copy-id -i ~/.ssh/id_rsa.pub cheer@10.184.17.27  ##   or
+Get-Content $env:USERPROFILE\.ssh\id_rsa.pub | ssh cheer@10.184.17.27 "cat >> .ssh/authorized_keys"
+
+
+CUDA 11.8
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+conda install pytorch=0.4.1 cuda90 -c pytorch
+
+Build Detectron2 from Source
+python -m pip install 'git+https://github.com/facebookresearch/detectron2.git'
+
+
+pip install -r requirements.txt
+
+nvcc -V

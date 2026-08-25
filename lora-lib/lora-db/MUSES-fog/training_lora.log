@@ -1,0 +1,687 @@
+======================================================================
+🚀 LORA TRAINING (MUSES-fog)
+======================================================================
+Start: 2025-11-22 05:20:30
+Device: cuda
+LoRA: r=16
+======================================================================
+
+ Creating base model...
+
+📂 Loading baseline decoder...
+✅ Baseline decoder loaded!
+✅ Linear-like modules found: 96
+encoder.layers.0.self_attn.k_proj
+encoder.layers.0.self_attn.v_proj
+encoder.layers.0.self_attn.q_proj
+encoder.layers.0.self_attn.out_proj
+encoder.layers.1.self_attn.k_proj
+encoder.layers.1.self_attn.v_proj
+encoder.layers.1.self_attn.q_proj
+encoder.layers.1.self_attn.out_proj
+encoder.layers.2.self_attn.k_proj
+encoder.layers.2.self_attn.v_proj
+encoder.layers.2.self_attn.q_proj
+encoder.layers.2.self_attn.out_proj
+encoder.layers.3.self_attn.k_proj
+encoder.layers.3.self_attn.v_proj
+encoder.layers.3.self_attn.q_proj
+encoder.layers.3.self_attn.out_proj
+encoder.layers.4.self_attn.k_proj
+encoder.layers.4.self_attn.v_proj
+encoder.layers.4.self_attn.q_proj
+encoder.layers.4.self_attn.out_proj
+encoder.layers.5.self_attn.k_proj
+encoder.layers.5.self_attn.v_proj
+encoder.layers.5.self_attn.q_proj
+encoder.layers.5.self_attn.out_proj
+encoder.layers.6.self_attn.k_proj
+encoder.layers.6.self_attn.v_proj
+encoder.layers.6.self_attn.q_proj
+encoder.layers.6.self_attn.out_proj
+encoder.layers.7.self_attn.k_proj
+encoder.layers.7.self_attn.v_proj
+encoder.layers.7.self_attn.q_proj
+encoder.layers.7.self_attn.out_proj
+encoder.layers.8.self_attn.k_proj
+encoder.layers.8.self_attn.v_proj
+encoder.layers.8.self_attn.q_proj
+encoder.layers.8.self_attn.out_proj
+encoder.layers.9.self_attn.k_proj
+encoder.layers.9.self_attn.v_proj
+encoder.layers.9.self_attn.q_proj
+encoder.layers.9.self_attn.out_proj
+encoder.layers.10.self_attn.k_proj
+encoder.layers.10.self_attn.v_proj
+encoder.layers.10.self_attn.q_proj
+encoder.layers.10.self_attn.out_proj
+encoder.layers.11.self_attn.k_proj
+encoder.layers.11.self_attn.v_proj
+encoder.layers.11.self_attn.q_proj
+encoder.layers.11.self_attn.out_proj
+encoder.layers.12.self_attn.k_proj
+encoder.layers.12.self_attn.v_proj
+encoder.layers.12.self_attn.q_proj
+encoder.layers.12.self_attn.out_proj
+encoder.layers.13.self_attn.k_proj
+encoder.layers.13.self_attn.v_proj
+encoder.layers.13.self_attn.q_proj
+encoder.layers.13.self_attn.out_proj
+encoder.layers.14.self_attn.k_proj
+encoder.layers.14.self_attn.v_proj
+encoder.layers.14.self_attn.q_proj
+encoder.layers.14.self_attn.out_proj
+encoder.layers.15.self_attn.k_proj
+encoder.layers.15.self_attn.v_proj
+encoder.layers.15.self_attn.q_proj
+encoder.layers.15.self_attn.out_proj
+encoder.layers.16.self_attn.k_proj
+encoder.layers.16.self_attn.v_proj
+encoder.layers.16.self_attn.q_proj
+encoder.layers.16.self_attn.out_proj
+encoder.layers.17.self_attn.k_proj
+encoder.layers.17.self_attn.v_proj
+encoder.layers.17.self_attn.q_proj
+encoder.layers.17.self_attn.out_proj
+encoder.layers.18.self_attn.k_proj
+encoder.layers.18.self_attn.v_proj
+encoder.layers.18.self_attn.q_proj
+encoder.layers.18.self_attn.out_proj
+encoder.layers.19.self_attn.k_proj
+encoder.layers.19.self_attn.v_proj
+encoder.layers.19.self_attn.q_proj
+encoder.layers.19.self_attn.out_proj
+encoder.layers.20.self_attn.k_proj
+encoder.layers.20.self_attn.v_proj
+encoder.layers.20.self_attn.q_proj
+encoder.layers.20.self_attn.out_proj
+encoder.layers.21.self_attn.k_proj
+encoder.layers.21.self_attn.v_proj
+encoder.layers.21.self_attn.q_proj
+encoder.layers.21.self_attn.out_proj
+encoder.layers.22.self_attn.k_proj
+encoder.layers.22.self_attn.v_proj
+encoder.layers.22.self_attn.q_proj
+encoder.layers.22.self_attn.out_proj
+encoder.layers.23.self_attn.k_proj
+encoder.layers.23.self_attn.v_proj
+encoder.layers.23.self_attn.q_proj
+encoder.layers.23.self_attn.out_proj
+⚠️ Non-linear modules skipped: 24
+('encoder.layers.0.self_attn', 'CLIPAttention')
+('encoder.layers.1.self_attn', 'CLIPAttention')
+('encoder.layers.2.self_attn', 'CLIPAttention')
+('encoder.layers.3.self_attn', 'CLIPAttention')
+('encoder.layers.4.self_attn', 'CLIPAttention')
+('encoder.layers.5.self_attn', 'CLIPAttention')
+('encoder.layers.6.self_attn', 'CLIPAttention')
+('encoder.layers.7.self_attn', 'CLIPAttention')
+('encoder.layers.8.self_attn', 'CLIPAttention')
+('encoder.layers.9.self_attn', 'CLIPAttention')
+('encoder.layers.10.self_attn', 'CLIPAttention')
+('encoder.layers.11.self_attn', 'CLIPAttention')
+('encoder.layers.12.self_attn', 'CLIPAttention')
+('encoder.layers.13.self_attn', 'CLIPAttention')
+('encoder.layers.14.self_attn', 'CLIPAttention')
+('encoder.layers.15.self_attn', 'CLIPAttention')
+('encoder.layers.16.self_attn', 'CLIPAttention')
+('encoder.layers.17.self_attn', 'CLIPAttention')
+('encoder.layers.18.self_attn', 'CLIPAttention')
+('encoder.layers.19.self_attn', 'CLIPAttention')
+('encoder.layers.20.self_attn', 'CLIPAttention')
+('encoder.layers.21.self_attn', 'CLIPAttention')
+('encoder.layers.22.self_attn', 'CLIPAttention')
+('encoder.layers.23.self_attn', 'CLIPAttention')
+
+🔧 Applying LoRA to CLIP...
+
+⚙️ Setting up optimizer...
+✅ Setup complete!
+   LoRA params: 3,145,728
+   Decoder params: 0
+
+======================================================================
+🎯 STARTING TRAINING
+======================================================================
+
+
+======================================================================
+Epoch 1/20
+======================================================================
+
+📊 Epoch 1 Summary:
+  Train Loss: 0.3435
+  Val Loss: 0.4761
+  Val mIoU: 0.4138
+💾 Best model saved! (mIoU: 0.4138)
+
+======================================================================
+Epoch 2/20
+======================================================================
+
+📊 Epoch 2 Summary:
+  Train Loss: 0.3167
+  Val Loss: 0.4899
+  Val mIoU: 0.4124
+
+======================================================================
+Epoch 3/20
+======================================================================
+
+📊 Epoch 3 Summary:
+  Train Loss: 0.3060
+  Val Loss: 0.4915
+  Val mIoU: 0.4110
+
+======================================================================
+Epoch 4/20
+======================================================================
+
+📊 Epoch 4 Summary:
+  Train Loss: 0.2894
+  Val Loss: 0.4884
+  Val mIoU: 0.4130
+
+======================================================================
+Epoch 5/20
+======================================================================
+
+📊 Epoch 5 Summary:
+  Train Loss: 0.2788
+  Val Loss: 0.4989
+  Val mIoU: 0.4110
+
+======================================================================
+Epoch 6/20
+======================================================================
+
+📊 Epoch 6 Summary:
+  Train Loss: 0.2628
+  Val Loss: 0.5120
+  Val mIoU: 0.4142
+💾 Best model saved! (mIoU: 0.4142)
+
+======================================================================
+Epoch 7/20
+======================================================================
+
+📊 Epoch 7 Summary:
+  Train Loss: 0.2527
+  Val Loss: 0.5088
+  Val mIoU: 0.4150
+💾 Best model saved! (mIoU: 0.4150)
+
+======================================================================
+Epoch 8/20
+======================================================================
+
+📊 Epoch 8 Summary:
+  Train Loss: 0.2389
+  Val Loss: 0.5233
+  Val mIoU: 0.4150
+
+======================================================================
+Epoch 9/20
+======================================================================
+
+📊 Epoch 9 Summary:
+  Train Loss: 0.2287
+  Val Loss: 0.5251
+  Val mIoU: 0.4151
+💾 Best model saved! (mIoU: 0.4151)
+
+======================================================================
+Epoch 10/20
+======================================================================
+
+📊 Epoch 10 Summary:
+  Train Loss: 0.2203
+  Val Loss: 0.5463
+  Val mIoU: 0.4149
+
+======================================================================
+Epoch 11/20
+======================================================================
+
+📊 Epoch 11 Summary:
+  Train Loss: 0.2156
+  Val Loss: 0.5346
+  Val mIoU: 0.4155
+💾 Best model saved! (mIoU: 0.4155)
+
+======================================================================
+Epoch 12/20
+======================================================================
+
+📊 Epoch 12 Summary:
+  Train Loss: 0.2100
+  Val Loss: 0.5653
+  Val mIoU: 0.4117
+
+======================================================================
+Epoch 13/20
+======================================================================
+
+📊 Epoch 13 Summary:
+  Train Loss: 0.2038
+  Val Loss: 0.5508
+  Val mIoU: 0.4136
+
+======================================================================
+Epoch 14/20
+======================================================================
+
+📊 Epoch 14 Summary:
+  Train Loss: 0.2001
+  Val Loss: 0.5647
+  Val mIoU: 0.4125
+
+======================================================================
+Epoch 15/20
+======================================================================
+
+📊 Epoch 15 Summary:
+  Train Loss: 0.1940
+  Val Loss: 0.5665
+  Val mIoU: 0.4130
+
+======================================================================
+Epoch 16/20
+======================================================================
+
+📊 Epoch 16 Summary:
+  Train Loss: 0.1930
+  Val Loss: 0.5778
+  Val mIoU: 0.4129
+
+======================================================================
+Epoch 17/20
+======================================================================
+
+📊 Epoch 17 Summary:
+  Train Loss: 0.1910
+  Val Loss: 0.5731
+  Val mIoU: 0.4129
+
+======================================================================
+Epoch 18/20
+======================================================================
+
+📊 Epoch 18 Summary:
+  Train Loss: 0.1882
+  Val Loss: 0.5741
+  Val mIoU: 0.4132
+
+======================================================================
+Epoch 19/20
+======================================================================
+
+📊 Epoch 19 Summary:
+  Train Loss: 0.1875
+  Val Loss: 0.5741
+  Val mIoU: 0.4129
+
+======================================================================
+Epoch 20/20
+======================================================================
+
+📊 Epoch 20 Summary:
+  Train Loss: 0.1871
+  Val Loss: 0.5753
+  Val mIoU: 0.4130
+
+======================================================================
+✅ TRAINING COMPLETE!
+======================================================================
+Best mIoU: 0.4155
+======================================================================
+======================================================================
+🚀 LORA TRAINING (MUSES-fog)
+======================================================================
+Start: 2025-11-24 17:31:46
+Device: cuda
+LoRA: r=16
+======================================================================
+
+ Creating base model...
+
+📂 Loading baseline decoder...
+✅ Baseline decoder loaded!
+✅ Linear-like modules found: 96
+encoder.layers.0.self_attn.k_proj
+encoder.layers.0.self_attn.v_proj
+encoder.layers.0.self_attn.q_proj
+encoder.layers.0.self_attn.out_proj
+encoder.layers.1.self_attn.k_proj
+encoder.layers.1.self_attn.v_proj
+encoder.layers.1.self_attn.q_proj
+encoder.layers.1.self_attn.out_proj
+encoder.layers.2.self_attn.k_proj
+encoder.layers.2.self_attn.v_proj
+encoder.layers.2.self_attn.q_proj
+encoder.layers.2.self_attn.out_proj
+encoder.layers.3.self_attn.k_proj
+encoder.layers.3.self_attn.v_proj
+encoder.layers.3.self_attn.q_proj
+encoder.layers.3.self_attn.out_proj
+encoder.layers.4.self_attn.k_proj
+encoder.layers.4.self_attn.v_proj
+encoder.layers.4.self_attn.q_proj
+encoder.layers.4.self_attn.out_proj
+encoder.layers.5.self_attn.k_proj
+encoder.layers.5.self_attn.v_proj
+encoder.layers.5.self_attn.q_proj
+encoder.layers.5.self_attn.out_proj
+encoder.layers.6.self_attn.k_proj
+encoder.layers.6.self_attn.v_proj
+encoder.layers.6.self_attn.q_proj
+encoder.layers.6.self_attn.out_proj
+encoder.layers.7.self_attn.k_proj
+encoder.layers.7.self_attn.v_proj
+encoder.layers.7.self_attn.q_proj
+encoder.layers.7.self_attn.out_proj
+encoder.layers.8.self_attn.k_proj
+encoder.layers.8.self_attn.v_proj
+encoder.layers.8.self_attn.q_proj
+encoder.layers.8.self_attn.out_proj
+encoder.layers.9.self_attn.k_proj
+encoder.layers.9.self_attn.v_proj
+encoder.layers.9.self_attn.q_proj
+encoder.layers.9.self_attn.out_proj
+encoder.layers.10.self_attn.k_proj
+encoder.layers.10.self_attn.v_proj
+encoder.layers.10.self_attn.q_proj
+encoder.layers.10.self_attn.out_proj
+encoder.layers.11.self_attn.k_proj
+encoder.layers.11.self_attn.v_proj
+encoder.layers.11.self_attn.q_proj
+encoder.layers.11.self_attn.out_proj
+encoder.layers.12.self_attn.k_proj
+encoder.layers.12.self_attn.v_proj
+encoder.layers.12.self_attn.q_proj
+encoder.layers.12.self_attn.out_proj
+encoder.layers.13.self_attn.k_proj
+encoder.layers.13.self_attn.v_proj
+encoder.layers.13.self_attn.q_proj
+encoder.layers.13.self_attn.out_proj
+encoder.layers.14.self_attn.k_proj
+encoder.layers.14.self_attn.v_proj
+encoder.layers.14.self_attn.q_proj
+encoder.layers.14.self_attn.out_proj
+encoder.layers.15.self_attn.k_proj
+encoder.layers.15.self_attn.v_proj
+encoder.layers.15.self_attn.q_proj
+encoder.layers.15.self_attn.out_proj
+encoder.layers.16.self_attn.k_proj
+encoder.layers.16.self_attn.v_proj
+encoder.layers.16.self_attn.q_proj
+encoder.layers.16.self_attn.out_proj
+encoder.layers.17.self_attn.k_proj
+encoder.layers.17.self_attn.v_proj
+encoder.layers.17.self_attn.q_proj
+encoder.layers.17.self_attn.out_proj
+encoder.layers.18.self_attn.k_proj
+encoder.layers.18.self_attn.v_proj
+encoder.layers.18.self_attn.q_proj
+encoder.layers.18.self_attn.out_proj
+encoder.layers.19.self_attn.k_proj
+encoder.layers.19.self_attn.v_proj
+encoder.layers.19.self_attn.q_proj
+encoder.layers.19.self_attn.out_proj
+encoder.layers.20.self_attn.k_proj
+encoder.layers.20.self_attn.v_proj
+encoder.layers.20.self_attn.q_proj
+encoder.layers.20.self_attn.out_proj
+encoder.layers.21.self_attn.k_proj
+encoder.layers.21.self_attn.v_proj
+encoder.layers.21.self_attn.q_proj
+encoder.layers.21.self_attn.out_proj
+encoder.layers.22.self_attn.k_proj
+encoder.layers.22.self_attn.v_proj
+encoder.layers.22.self_attn.q_proj
+encoder.layers.22.self_attn.out_proj
+encoder.layers.23.self_attn.k_proj
+encoder.layers.23.self_attn.v_proj
+encoder.layers.23.self_attn.q_proj
+encoder.layers.23.self_attn.out_proj
+⚠️ Non-linear modules skipped: 24
+('encoder.layers.0.self_attn', 'CLIPAttention')
+('encoder.layers.1.self_attn', 'CLIPAttention')
+('encoder.layers.2.self_attn', 'CLIPAttention')
+('encoder.layers.3.self_attn', 'CLIPAttention')
+('encoder.layers.4.self_attn', 'CLIPAttention')
+('encoder.layers.5.self_attn', 'CLIPAttention')
+('encoder.layers.6.self_attn', 'CLIPAttention')
+('encoder.layers.7.self_attn', 'CLIPAttention')
+('encoder.layers.8.self_attn', 'CLIPAttention')
+('encoder.layers.9.self_attn', 'CLIPAttention')
+('encoder.layers.10.self_attn', 'CLIPAttention')
+('encoder.layers.11.self_attn', 'CLIPAttention')
+('encoder.layers.12.self_attn', 'CLIPAttention')
+('encoder.layers.13.self_attn', 'CLIPAttention')
+('encoder.layers.14.self_attn', 'CLIPAttention')
+('encoder.layers.15.self_attn', 'CLIPAttention')
+('encoder.layers.16.self_attn', 'CLIPAttention')
+('encoder.layers.17.self_attn', 'CLIPAttention')
+('encoder.layers.18.self_attn', 'CLIPAttention')
+('encoder.layers.19.self_attn', 'CLIPAttention')
+('encoder.layers.20.self_attn', 'CLIPAttention')
+('encoder.layers.21.self_attn', 'CLIPAttention')
+('encoder.layers.22.self_attn', 'CLIPAttention')
+('encoder.layers.23.self_attn', 'CLIPAttention')
+
+🔧 Applying LoRA to CLIP...
+
+⚙️ Setting up optimizer...
+✅ Setup complete!
+   LoRA params: 3,145,728
+   Decoder params: 0
+
+======================================================================
+🎯 STARTING TRAINING
+======================================================================
+
+
+======================================================================
+Epoch 1/20
+======================================================================
+
+📊 Epoch 1 Summary:
+  Train Loss: 1.0910
+  Val Loss: 0.8374
+  Val mIoU: 0.3010
+💾 Best model saved! (mIoU: 0.3010)
+
+======================================================================
+Epoch 2/20
+======================================================================
+
+📊 Epoch 2 Summary:
+  Train Loss: 0.9380
+  Val Loss: 0.6898
+  Val mIoU: 0.3261
+💾 Best model saved! (mIoU: 0.3261)
+
+======================================================================
+Epoch 3/20
+======================================================================
+
+📊 Epoch 3 Summary:
+  Train Loss: 0.8138
+  Val Loss: 0.5957
+  Val mIoU: 0.3523
+💾 Best model saved! (mIoU: 0.3523)
+
+======================================================================
+Epoch 4/20
+======================================================================
+
+📊 Epoch 4 Summary:
+  Train Loss: 0.7133
+  Val Loss: 0.5290
+  Val mIoU: 0.3764
+💾 Best model saved! (mIoU: 0.3764)
+
+======================================================================
+Epoch 5/20
+======================================================================
+
+📊 Epoch 5 Summary:
+  Train Loss: 0.6322
+  Val Loss: 0.4987
+  Val mIoU: 0.3883
+💾 Best model saved! (mIoU: 0.3883)
+
+======================================================================
+Epoch 6/20
+======================================================================
+
+📊 Epoch 6 Summary:
+  Train Loss: 0.5895
+  Val Loss: 0.4816
+  Val mIoU: 0.3951
+💾 Best model saved! (mIoU: 0.3951)
+
+======================================================================
+Epoch 7/20
+======================================================================
+
+📊 Epoch 7 Summary:
+  Train Loss: 0.5550
+  Val Loss: 0.4681
+  Val mIoU: 0.3997
+💾 Best model saved! (mIoU: 0.3997)
+
+======================================================================
+Epoch 8/20
+======================================================================
+
+📊 Epoch 8 Summary:
+  Train Loss: 0.5251
+  Val Loss: 0.4631
+  Val mIoU: 0.4043
+💾 Best model saved! (mIoU: 0.4043)
+
+======================================================================
+Epoch 9/20
+======================================================================
+
+📊 Epoch 9 Summary:
+  Train Loss: 0.5052
+  Val Loss: 0.4560
+  Val mIoU: 0.4074
+💾 Best model saved! (mIoU: 0.4074)
+
+======================================================================
+Epoch 10/20
+======================================================================
+
+📊 Epoch 10 Summary:
+  Train Loss: 0.4839
+  Val Loss: 0.4470
+  Val mIoU: 0.4104
+💾 Best model saved! (mIoU: 0.4104)
+
+======================================================================
+Epoch 11/20
+======================================================================
+
+📊 Epoch 11 Summary:
+  Train Loss: 0.4733
+  Val Loss: 0.4513
+  Val mIoU: 0.4125
+💾 Best model saved! (mIoU: 0.4125)
+
+======================================================================
+Epoch 12/20
+======================================================================
+
+📊 Epoch 12 Summary:
+  Train Loss: 0.4618
+  Val Loss: 0.4415
+  Val mIoU: 0.4140
+💾 Best model saved! (mIoU: 0.4140)
+
+======================================================================
+Epoch 13/20
+======================================================================
+
+📊 Epoch 13 Summary:
+  Train Loss: 0.4468
+  Val Loss: 0.4454
+  Val mIoU: 0.4151
+💾 Best model saved! (mIoU: 0.4151)
+
+======================================================================
+Epoch 14/20
+======================================================================
+
+📊 Epoch 14 Summary:
+  Train Loss: 0.4400
+  Val Loss: 0.4398
+  Val mIoU: 0.4159
+💾 Best model saved! (mIoU: 0.4159)
+
+======================================================================
+Epoch 15/20
+======================================================================
+
+📊 Epoch 15 Summary:
+  Train Loss: 0.4340
+  Val Loss: 0.4427
+  Val mIoU: 0.4164
+💾 Best model saved! (mIoU: 0.4164)
+
+======================================================================
+Epoch 16/20
+======================================================================
+
+📊 Epoch 16 Summary:
+  Train Loss: 0.4271
+  Val Loss: 0.4389
+  Val mIoU: 0.4162
+
+======================================================================
+Epoch 17/20
+======================================================================
+
+📊 Epoch 17 Summary:
+  Train Loss: 0.4272
+  Val Loss: 0.4389
+  Val mIoU: 0.4167
+💾 Best model saved! (mIoU: 0.4167)
+
+======================================================================
+Epoch 18/20
+======================================================================
+
+📊 Epoch 18 Summary:
+  Train Loss: 0.4252
+  Val Loss: 0.4390
+  Val mIoU: 0.4169
+💾 Best model saved! (mIoU: 0.4169)
+
+======================================================================
+Epoch 19/20
+======================================================================
+
+📊 Epoch 19 Summary:
+  Train Loss: 0.4245
+  Val Loss: 0.4385
+  Val mIoU: 0.4169
+💾 Best model saved! (mIoU: 0.4169)
+
+======================================================================
+Epoch 20/20
+======================================================================
+
+📊 Epoch 20 Summary:
+  Train Loss: 0.4235
+  Val Loss: 0.4387
+  Val mIoU: 0.4168
+
+======================================================================
+✅ TRAINING COMPLETE!
+======================================================================
+Best mIoU: 0.4169
+======================================================================
