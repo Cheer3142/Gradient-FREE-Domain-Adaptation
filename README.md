@@ -117,8 +117,7 @@ The datasets are organized into source and target domains according to the exper
 Clone the repository:
 
 ```bash
-git clone <REPOSITORY_URL>
-cd <REPOSITORY_NAME>
+git clone https://github.com/Cheer3142/Gradient-FREE-Domain-Adaptation/blob/main
 ```
 
 Create the Python environment:
@@ -209,34 +208,6 @@ The proposed framework improves the robustness of OVSS under heterogeneous domai
 
 The results demonstrate that domain-specific adapters can substantially improve segmentation performance compared with the zero-shot baseline. The proposed similarity-guided mechanism further enables training-free adaptation by dynamically selecting and combining relevant domain-specific knowledge.
 
-## Computational Overhead
-
-The computational overhead of the proposed framework is evaluated in terms of inference latency.
-
-The base model requires approximately **82.40 ms/image**, while the proposed framework requires approximately **83.83 ms/image**, corresponding to an additional latency of approximately **1.43 ms/image** or **1.74%** relative to the base model.
-
-The routing and adapter fusion operations introduce additional computation while avoiding gradient-based optimization during test time.
-
-> **Note:** The latency values should be updated if the benchmark environment or implementation changes.
-
-## Repository Structure
-
-```text
-.
-├── configs/
-├── datasets/
-├── models/
-├── adapters/
-├── centroids/
-├── scripts/
-├── train_lora.py
-├── train_block_lora.py
-├── build_centroids.py
-├── test_time_adaptation.py
-├── requirements.txt
-└── README.md
-```
-
 ## Citation
 
 If you find this work useful in your research, please consider citing:
@@ -254,6 +225,3 @@ If you find this work useful in your research, please consider citing:
 
 This work was conducted as part of a research project on Open-Vocabulary Semantic Segmentation, parameter-efficient adaptation, and vision-language models.
 
-## License
-
-This project is released for research purposes. Please refer to the `LICENSE` file for details.
