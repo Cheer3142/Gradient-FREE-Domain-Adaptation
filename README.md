@@ -16,11 +16,10 @@ The framework therefore separates **domain-specific knowledge acquisition** from
 
 * CLIP-based Open-Vocabulary Semantic Segmentation
 * Parameter-efficient LoRA and Block-LoRA adaptation
-* Domain-specific adapter library
+* Library of LoRA-based Adapter 
 * Centroid-guided adapter retrieval
 * Similarity-guided adapter fusion
-* Training-free test-time adaptation
-* No target-domain gradient optimization
+* Gradient-Free test-time adaptation
 * Frozen CLIP backbone during adaptation
 * Support for heterogeneous domain shifts
 
