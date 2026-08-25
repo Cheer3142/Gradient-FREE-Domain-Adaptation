@@ -185,29 +185,6 @@ adapters/
 └── ...
 ```
 
-## Building Domain Centroids
-
-After training the domain-specific adapters, feature representations from each source domain are aggregated to construct the corresponding domain centroids.
-
-```bash
-python build_centroids.py \
-    --dataset_root <DATASET_PATH> \
-    --output_dir <CENTROID_DIR>
-```
-
-Each centroid represents the general visual characteristics of its corresponding source domain and is used as the reference for adapter retrieval.
-
-## Training-Free Test-Time Adaptation
-
-The proposed framework performs adaptation directly during inference without gradient-based optimization.
-
-```bash
-python test_time_adaptation.py \
-    --adapter_dir <ADAPTER_DIR> \
-    --centroid_dir <CENTROID_DIR> \
-    --top_k <K>
-```
-
 The inference pipeline performs:
 
 1. Target image feature extraction
